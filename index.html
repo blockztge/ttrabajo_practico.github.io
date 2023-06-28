@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema de productos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+
+
+</head>
+<body>
+    
+    <form method="post" action="form.php" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <h1>Sistema de productos</h1>
+            </tr>
+            <tr>
+                <th><label for="nombre">Nombre del producto:</label></th>
+                <td><input type="text" id="nombre" name="nombre" required maxlength="20"></td>
+            </tr>
+            <tr>
+                <th><label for="codigo">Codigo del producto:</label></th>
+                <td><input type="text" id="codigo" name="codigo" pattern="[0-9]+" required maxlength="20"></td>
+            </tr>
+            <tr>
+                <th><label for="descripcion">Descripcion:</label></th>
+                <td><input id="descripcion" name="descripcion" required maxlength="30"></td>
+            </tr>
+            <tr>
+                <th><label for="precio">Precio del producto:</label></th>
+                <td><input type="number" id="precio" name="precio" step="0.01" required></td>
+            </tr>
+            <tr>
+                <th><label for="cantidad">Cantidad:</label></th>
+                <td><input type="number" id="cantidad" name="cantidad" min="1" value="1" required></td>
+            </tr>
+
+            <tr>
+                <th><label for="impuesto">Impuesto:</label></th>
+                <td>
+                    <select id="impuesto" name="impuesto" required>
+                        <option value="10">impuesto del 10%</option>
+                        <option value="20">impuesto del 20%</option>
+                        <option value="30">impuesto del 30%</option>
+                        <option value="40">impuesto del 40%</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="imagen">Imagen del producto:</label></th>
+                <td><input type="file" id="imagen" name="imagen" accept="image/*" required></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Calcular">
+    </form>
+    
+    <p>By Gustavo Montenegro</p>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+img{
+    width: 120px;
+}
+form{
+    border: 1px solid black;
+    display: inline;
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    border-radius: 20px;
+    
+}
+.img-tabla{
+    position: relative;
+    left: 20%;
+
+}
+
+.tabla-form{
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    border: 1px solid black;
+    border-radius:20px;
+}
+body{
+   margin: 0;
+   padding: 0;
+  /* background-image: url('img/fondo.jpeg');*/
+}
+input{
+    background: none;
+    border: 1px solid;
+
+}
+input[type="submit"]{
+border-radius: 5px;
+position: relative;
+bottom: 10px;
+left: 40%;
+font-weight: bold;
+width: 100px;
+height: 25px;
+
+}
+input[type="submit"]:hover{
+    background-color: antiquewhite;
+}
+h1{
+position: relative;
+left: 20%;
+}
+
+p{
+    position: relative;
+    left: 45%;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+        position: relative;
+        left: 10%;
+        display: inline-block;
+    }
+    table {
+        width: 100%;
+        
+    }
+    th, td {
+        display: block;
+    }
+    th {
+        font-weight: bold;
+        text-align: left;
+    }
+    td {
+        margin-bottom: 10px;
+    }
+    input[type="submit"] {
+        width: 50%;
+        position: relative;
+        left: 25%;
+
+
+    }
+    form{
+        width: 100%;
+    }
+   
+}
